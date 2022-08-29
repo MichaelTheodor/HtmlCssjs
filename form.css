@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    font-family: "Roboto";
+    box-sizing: border-box;
+ 
+  }
+
+  body{
+    background-image: url(images/1.webp);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: scroll;
+  }
+  
+  input[type=text]{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input [type="number"] {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input[type=button] {
+    background-color: #040faa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 8%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  input[type=button]:hover {
+    background-color: #1199cf;
+  }
+  input[type=submit] {
+    background-color: #040faa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 8%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #1199cf;
+  }
+  
+  input[type=reset] {
+    background-color: #040faa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 8%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  input[type=reset]:hover {
+    background-color: #1199cf;
+  }
+   
+  button[type=submit]
+  {
+    background-color: #040faa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 8%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  button[type=submit]:hover {
+    background-color: #1199cf;
+  }
+   
+  button[type=reset]
+  {
+    background-color: #040faa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 8%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  button[type=reset]:hover {
+    background-color: #1199cf;
+  }
+
+  button[type=button]
+  {
+    background-color: #040faa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 8%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  button[type=button]:hover {
+    background-color: #1199cf;
+  }

@@ -1,0 +1,426 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Book_your_flight </title>
+<link rel="stylesheet" href="form.css">
+<script src="https://kit.fontawesome.com/03d99e70cf.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+<div class="hero">
+	<fieldset><legend><h2 >Personal Information</h2></legend> 	
+		<form method="post" action="process.php">
+				<div class="input group">
+				<p>
+					<label for="firstname"><i class="fa-solid fa-user"></i>  Firstname:</label> <br>
+					<input  placeholder="Only latin characters"  type="text"   id="firstname" name="firstname" >
+					<Small> <p id="error" style="color:red;"> </p> </Small>
+				</p>   
+				</div>
+			<div class="input group">
+				<p>
+				<label for="lastname"><i class="fa-solid fa-user"></i>  Lastname:</label><br>
+				<input  placeholder="Only latin characters"type="text" id="lastname" name="lastname" >
+				<p id="error1" style="color:red;"></p> 
+				</p>
+			</div>
+			<div class="input group">
+				<p>
+					<label for="birthday"><i class="fa-solid fa-calendar"></i>  Date of birth:</label><br>
+					<input  type="date" id="birthday" name="birthday">
+				
+				</p>
+			</div>
+			<div class="input group">
+				<p>
+					<label for="address"><i class="fa-solid fa-map-location-dot"></i>  Address</label><br>
+					<input  placeholder="Latin characters & numbers only  (format:Address 42)" type="text" id="address" name="address" >
+					<p id="error2" style="color:red;"></p> 
+				</p> 
+			</div>
+			<div class="input group">
+				<p>
+				<label for="country"><i class="fa-solid fa-globe"></i>  Country:<br>
+				<select required  id="country" name="country" >
+					<option></i>Please choose your country</option>
+					<optgroup label="Africa">
+							<option>Algeria</option>
+							<option>Angola</option>
+							<option>Benin</option>
+							<option>Botswana</option>
+							<option>Burundi</option>
+							<option>Cabo Verde</option>
+							<option>Cameroon</option>
+							<option>Central African Republic (CAR)</option>
+							<option>Chad</option>
+							<option>Comoros</option>
+							<option>Congo</option>
+							<option>Cote d'Ivoire</option>
+							<option>Djibouti</option>
+							<option>Egypt</option>
+							<option>Equatorial Guinea</option>
+							<option>Eritrea</option>
+							<option>Eswatini</option>
+							<option>Ethiopia</option>
+							<option>Gabon</option>
+							<option>Gabon</option>
+							<option>Ghana</option>
+							<option>Guinea</option>
+							<option>Guinea-Bissau</option>
+							<option>Kenya</option>
+							<option>Lesotho</option>
+							<option>Liberia</option>
+							<option>Libya</option>
+							<option>Madagascar</option>
+							<option>Malawi</option>
+							<option>Mali</option>
+							<option>Mauritania</option>
+							<option>Mauritius</option>
+							<option>Morocco</option>
+							<option>Mozambique</option>
+							<option>Namibia</option>
+							<option>Niger</option>
+							<option>Nigeria</option>
+							<option>Sao Tome and Principe</option>
+							<option>Senegal</option>
+							<option>Seychelles</option>
+							<option>Sierra Leone</option>
+							<option>Somalia</option>
+							<option>South Africa</option>
+							<option>South Sudan</option>
+							<option>Sudan</option>
+							<option>Tanzania</option>
+							<option>Togo</option>
+							<option>Tunisia</option>
+							<option>Uganda</option>
+							<option>Zambia</option>
+							<option>Zimbabwe</option>
+					</optgroup>        
+						<optgroup label="Asia">
+						<option>Afghanistan</option>
+						<option>Armenia</option>
+						<option>Azerbaijan</option>
+						<option>Bahrain</option>
+						<option>Bangladesh</option>
+						<option>Bhutan</option>
+						<option>Brunei</option>
+						<option>Cambodia</option>
+						<option>China</option>
+						<option>Georgia</option>
+						<option>India</option>
+						<option>Indonesia</option>
+						<option>Iran</option>
+						<option>Iraq</option>
+						<option>Israel</option>
+						<option>Japan</option>
+						<option>Jordan</option>
+						<option>Kuwait</option>
+						<option>Kyrgyzstan</option>
+						<option>Laos</option>
+						<option>Lebanon</option>
+						<option>Malaysia</option>
+						<option>Maldives</option>
+						<option>Mongolia</option>
+						<option>Myanmar</option>
+						<option>Nepal</option>
+						<option>North Korea</option>
+						<option>Oman</option>
+						<option>Pakistan</option>
+						<option>Palestine</option>
+						<option>Philippines</option>
+						<option>Qatar</option>
+						<option>Russia</option>
+						<option>Saudi Arabia</option>
+						<option>Singapore</option>
+						<option>South Korea</option>
+						<option>Sri Lanka</option>
+						<option>Syria</option>
+						<option>Taiwan</option>
+						<option>Tajikistan</option>
+						<option>Thailand</option>
+						<option>Timor-Leste</option>
+						<option>Turkey</option>
+						<option>Turkmenistan</option>
+						<option>United Arab Emirates (UAE)</option>
+						<option>Uzbekistan</option>
+						<option>Vietnam</option>
+						<option>Yemen</option>
+						</optgroup>
+						<optgroup label="Australia">
+						<option>Australia</option>
+						<option>Fiji</option>
+						<option>Kiribati</option>
+						<option>Marshall Islands</option>
+						<option>Micronesia</option>
+						<option>Nauru</option>
+						<option>New Zealand</option>
+						<option>Palau</option>
+						<option>Papua New Guinea</option>
+						<option>Samoa</option>
+						<option>Solomon Islands</option>
+						<option>Tonga</option>
+						<option>Tuvalu</option>
+						<option>Vanuatu</option>
+						</optgroup>
+						<optgroup label="Europe">
+						<option>Albania</option>
+						<option>Andorra</option>
+						<option>Armenia</option>
+						<option>Austria</option>
+						<option>Azerbaijan</option>
+						<option>Belarus</option>
+						<option>Belgium</option>
+						<option>Bosnia and Herzegovina</option>
+						<option>Bulgaria</option>
+						<option>Croatia</option>
+						<option>Cyprus</option>
+						<option>Czech Republic</option>
+						<option>Denmark</option>
+						<option>Estonia</option>
+						<option>Finland</option>
+						<option>France</option>
+						<option>Georgia</option>
+						<option>Germany</option>
+						<option>Greece</option>
+						<option>Hungary</option>
+						<option>Iceland</option>
+						<option>Ireland</option>
+						<option>Italy</option>
+						<option>Kazakhstan</option>
+						<option>Kosovo</option>
+						<option>Latvia</option>
+						<option>Liechtenstein</option>
+						<option>Lithuania</option>
+						<option>Luxembourg</option>
+						<option>Malta</option>
+						<option>Moldova</option>
+						<option>Monaco</option>
+						<option>Montenegro</option>
+						<option>Netherlands</option>
+						<option>North Macedonia</option>
+						<option>Norway</option>
+						<option>Poland</option>
+						<option>Portugal</option>
+						<option>Romania</option>
+						<option>San Marino</option>
+						<option>Serbia</option>
+						<option>Slovakia</option>
+						<option>Slovenia</option>
+						<option>Spain</option>
+						<option>Sweden</option>
+						<option>Switzerland</option>
+						<option>Ukraine</option>
+						<option>United Kingdom (UK)</option> 
+						</optgroup> 
+						<optgroup label="North America">
+						<option>Antigua and Barbuda </option> 
+						<option>Bahamas</option> 
+						<option>Barbados</option> 
+						<option>Belize</option>
+						<option>Canada</option>  
+						<option>Costa Rica</option> 
+						<option>Cuba</option> 
+						<option>Dominica</option> 
+						<option>Dominican Republic</option> 
+						<option>El Salvador</option> 
+						<option>Grenada</option> 
+						<option>Guatemala</option> 
+						<option>Haiti</option> 
+						<option>Honduras</option> 
+						<option>Jamaica</option> 
+						<option>Mexico</option> 
+						<option>Nicaragua</option> 
+						<option>Panama</option> 
+						<option>Saint Kitts and Nevis</option> 
+						<option>Saint Lucia</option> 
+						<option>Saint Vincent and the Grenadines</option>
+						<option>Trinidad and Tobago</option> 
+						<option>United States of America (USA)</option>
+					</optgroup> 
+					<optgroup label="South America">
+					<option>Argentina</option> 
+					<option>Bolivia</option> 
+					<option>Brazil</option> 
+					<option>Chile</option>
+					<option>Colombia</option> 
+					<option>Ecuador</option> 
+					<option>Guyana</option>   
+					<option>Paraguay</option> 
+					<option>Peru</option> 
+					<option>Suriname</option>   
+					<option>Uruguay</option> 
+					<option>Venezuela</option>
+					</optgroup>       
+				</select>
+				</label>
+				</p> 
+			</div>    
+			<div class="input group">
+				<p>
+					<label for="zip_code"><i class="fa-solid fa-magnifying-glass-location"></i>  Zip Code:</label><br> 
+					<input type="text"placeholder="Only 5 numbers"  id="zip_code" name="zip_code">
+					<p id="error3" style="color:red;"></p> 
+				</p> 
+			</div>  
+			<div class="input group">
+				<p>
+					<label for="email"><i class="fa-solid fa-at"></i>  Email:</label><br> 
+					<input type="text" placeholder=sales@greek_airlines.com id="email" name="email" >
+					<p id="error4" style="color:red;"></p> 
+				</p>       
+			</div>
+			<div class="input group">
+				<p>
+					<label for="phone_number"><i class="fa-solid fa-phone"></i>  Phone number:</label><br>
+					<input type="text" placeholder="+3021XXXXXXXX" id="phone_number" name="phone_number">
+					<p id="error5" style="color:red;"></p> 
+				</p> 
+			</div>
+			<div class="input group">
+				<p>
+					<label for="cellphone_number"><i class="fa-solid fa-mobile"></i>  Cellphone number:</label><br>
+					<input type="text" id="cellphone_number" name="cellphone_number" placeholder="+3069XXXXXXXX" >
+					<p id="error6" style="color:red;"></p> 
+				</p>
+			</div>      
+			<fieldset><legend> <h2>Book your flight</h2></legend>
+
+				<label for="departure">Departs:</label>
+				<input type="date" id="departure" name="departure">
+
+				<label for="destination"> From:</label>
+				<select id="destination"  name="destination">
+				<option value=" "></option>
+				<option value="Athens">Athens (ATH)</option>
+				<option value="Abu Dhabi">Abu Dhabi (AUH)</option>
+				<option value="Amsterdam">Amsterdam (AMS)</option>
+				<option value="Barcelona">Barcelona (BCN)</option>
+				<option value="Rome">Rome (FCO)</option>
+				</select>
+				<label for="destination1">To:</label>
+				<select id="destination1" name="destination1">
+				<option value=" "></option>
+				<option value="Rome">Rome (FCO)</option>
+				<option value="Abu Dhabi">Abu Dhabi (AUH)</option>
+				<option value="Amsterdam">Amsterdam (AMS)</option>
+				<option value="Barcelona">Barcelona (BCN)</option>
+				<option value="Athens">Athens (ATH)</option>
+				</select>
+
+				<input type="checkbox" id="travel" name="travel" value="One way">
+				<label for="travel">One way</label><br><br><br>
+				
+				
+				<label for="return1">Returns:</label>
+				<input type="date" id="return1" name="return1" >
+				<label for="destination2">From:</label>
+				<select id="destination2" name="destination2">
+				<option value=" "></option>
+				<option value="Rome">Rome (FCO)</option>
+				<option value="Athens">Athens (ATH)</option>
+				<option value="Abu Dhabi">Abu Dhabi (AUH)</option>
+				<option value="Amsterdam">Amsterdam (AMS)</option>
+				<option value="Barcelona">Barcelona (BCN)</option>
+				
+				</select>
+				<label for="destination3">To:</label>
+				<select id="destination3" name="destination3">
+				<option value=" "></option>
+				<option value="Athens">Athens (ATH)</option>
+				<option value="Rome">Rome (FCO)</option>
+				<option value="Abu Dhabi">Abu Dhabi (AUH)</option>
+				<option value="Amsterdam">Amsterdam (AMS)</option>
+				<option value="Barcelona">Barcelona (BCN)</option>
+				</select><br><br>
+
+				<input type="checkbox" id="travel2" name="travel2" value="direct_flights">
+				<label for="travel2"> Direct flights</label>
+				<input type="checkbox" id="travel3" name="travel3" value="Flexible dates">
+				<label for="travel3"> Flexible dates</label><br><br> 
+				<h3>Passengers</h3>
+				<input type="checkbox" id="adult_pass" name="adult_pass" value="adult_pass">
+				<label for="adult_pass"> Adults </label>
+				<label for="pass_number">Number:</label>
+				<select id="pass_number" name="pass_number">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				
+				<input type="checkbox" id="children_5_17" name="children_5_17" value="children_5_17">
+				<label for="children_5_17"> Children (5-17years) </label>
+				<label for="pass_number1">Number:</label>
+				<select id="pass_number1" name="pass_number1">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+
+				<input type="checkbox" id="children_b4" name="children_b4" value="children_b4">
+				<label for="children_b4"> Children (2-4 years)</label>
+				<label for="pass_number2">Number:</label>
+				<select id="pass_number2" name="pass_number2">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+
+				<input type="checkbox" id="infants" name="infants" value="infants">
+				<label for="infants"> infants (Under 2 years) </label>
+				<label for="pass_number3">Number:</label>
+				<select id="pass_number3" name="pass_number3">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				</select><br>
+			<h3>Payment</h3>
+			<div class="input group">    
+				<p>
+					<label for="credit_card_number"><i class="fa-solid fa-credit-card"></i>  Credit Card Number:</label>
+					<input type="text" id="credit_card_number" name="credit_card_number" placeholder=" Only numbers  (16 digits)">
+					<p id="error7" style="color:red;"></p> 
+				</p>
+			</div>
+			<div class="input group">
+				<p>
+					<label for="credit_card_type"><i class="fa-brands fa-cc-amex"></i>  Credit Card Type:
+					<select  id="credit_card_type" name="credit_card_type">
+					<option></i>Please choose your credit card</option>
+					<option></i>American Express</option>
+					<option></i>MasterCard</option>
+					<option></i>Visa</option>
+					<option></i>Diners Club</option>
+					<option></i>Maestro</option>
+					<option></i>Other options</option>
+					</select>
+					</label>
+					<p id="error8" style="color:red;"></p> 
+				</p>
+			</div>	
+			
+			<button type="submit"  id="button_submit"  name="button_submit" value="Submit" onclick="return Validate_form()">Submit</button>
+			<button type="button" id="button_print" name="button_print" value="Print" onclick="return printPage()">Print</button>
+			<button type="reset" id="button_clear" name="button_clear" value="Clear" onclick="return Clear_form()">Clear</button>
+			
+
+	</fieldset>
+	<fieldset><legend><h2 >Search with your email</h2></legend>   
+			</form>
+
+				<form method="get" action="process.php">
+				<label for="email">Enter your email: </label>
+				<input type="text" id="email" name="email">
+				<input type="submit" name="search" id="search" value="Search" >
+				<input type="reset" name="clear_search" id="clear_search" value="Clear Search" >
+			</form>
+	</fieldset>
+</div>
+<script type="text/javascript" src="./Script_form.js"></script> 
+</body>
+</html>

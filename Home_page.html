@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Greek Airlines</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home page.css">
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <img src="images/logo.png" alt="Our logo" class="logo" >
+  </div>
+</div>
+
+<div class="topnav">
+  <a href="Home_page.html">Home</a>
+  <a href="Destinations.html">Destinations</a>
+  <a href="Flight_Deals.html">Flight Deals</a>
+  <a href="Travel_information.html">Travel Information</a>
+  <a href="About_us.html">About Us</a>
+  <a href="index.html">Sign Up</a>
+  <a href="#">Login</a>
+</div>
+<section class="section_1">
+<div class="slideshow-content slideshow-section">
+<br><br>
+<img class="mySlides" src="Slides/sky.jpg" >
+<img class="mySlides" src="Slides/ocean.jpg" >
+<img class="mySlides" src="Slides/sunset.jpg">
+<br><br>
+</div>
+<marquee behavior="slide"  direction="left">
+  <b>FLIGHT NO. A3931|  FROM:Cairo (CAI) TO:Athens (ATH)| DEPARTS AT: 03:10|<br><br>
+  FLIGHT NO. A3719|FROM:Tallinn (TLL) TO:Athens (ATH)| DEPARTS AT: 03:40|<br><br>
+    FLIGHT NO. A3899|  FROM:Amman (AMM) TO:Athens (ATH)| DEPARTS AT: 04:00|<br><br>
+    FLIGHT NO. A32951|FROM:Yerevan (EVN) TO:Athens (ATH)| DEPARTS AT: 04:50|</b>
+</marquee>
+</section>
+
+  
+<div class="row">
+  <section class="section_2">
+  <div class="column">
+    <h1> Get on board!</h1>
+    <img src="images/Get_on_board.png" alt="Get on board">
+  </div>
+  </section>
+    
+  <section class="section_3">
+  <div class="column">
+  <h1>Book a flight</h1>
+  <p> Depending on the purpose of your trip, you may want to travel to a single or multiple destinations. Whatever your plans are, we offer you the solution that best suits your needs. Choose between "One way/ Round trip" and "More options" and book your flight ticket(s) now</p><br>
+  <img src="images/online_booking.jpg" alt="Get on board" width="700" height="300">
+  <br><br><br><br>
+  <form>
+      <label for="from">From:</label>
+      <select id="from" name="from">
+        <option value="Athens">Athens (ATH)</option>
+        <option value="Abu Dhabi">Abu Dhabi (AUH)</option>
+        <option value="Amsterdam">Amsterdam (AMS)</option>
+        <option value="Barcelona">Barcelona (BCN)</option>
+        <option value="Rome">Rome (FCO)</option>
+      </select>
+      <label for="To">To:</label>
+      <select id="To" name="To">
+        <option value="Rome">Rome (FCO)</option>
+        <option value="Abu Dhabi">Abu Dhabi (AUH)</option>
+        <option value="Amsterdam">Amsterdam (AMS)</option>
+        <option value="Barcelona">Barcelona (BCN)</option>
+        <option value="Athens">Athens (ATH)</option>
+      </select>
+      <input type="checkbox" id="travel" name="travel" value="One way">
+      <label for="travel"> One way</label><br><br><br>
+      <label for="dates">Dates:</label>
+      <input type="text" id="dates" name="dates" value="">
+      <label for="passengers">Passengers:</label>
+      <select id="passengers" name="passengers">
+        <option value="Adults">Adults</option>
+        <option value="Children (5-17)">Children (5-15 years)</option>
+        <option value="Children_b4">Children (2-4 years)</option>
+        <option value="Infants">Infants (Under 2 yers)</option>
+      </select><br><br>
+      <input type="checkbox" id="travel2" name="travel2" value="direct_flights">
+      <label for="travel2"> Direct flights</label>
+      <input type="checkbox" id="travel3" name="travel3" value="Flexible dates">
+      <label for="travel3"> Flexible dates</label><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+<br>
+  </div>
+  </section>
+    
+  <section class="section_4">
+  <div class="column">
+    <h1>Flight Status</h1> 
+      <p><b><em>| WED,15 JUN | </b></em> 
+      <div class="button_destin">
+      <button_destin> NEXT DAY</button_destin> 
+      </div>
+      <br>   All flights appear in local time.</p>
+      <table>
+          <tr>
+              <th>FLIGHT NO.</th>
+              <th>ROUTE</th>
+              <th>DEPARTURE</th>
+              <th>ARRIVAL</th>
+              <th>STATUS</th>
+          </tr>
+          <tr>
+          <td><img src="images/favicon.png" alt="logo" width="20px" height="20px">A3719 </td>
+          <td>Tallinn (TLL) - Athens (ATH)</td>
+          <td>03:40</td>
+          <td>07:20</td>
+          <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td><img src="images/favicon.png" alt="logo" width="20px" height="20px"> A32951</td>
+              <td> Yerevan (EVN) - Athens (ATH)</td>
+              <td> 04:50</td>
+              <td> 06:50</td>
+              <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td><img src="images/favicon.png" alt="logo" width="20px" height="20px">A3899</td>
+              <td> Amman (AMM) - Athens (ATH)</td>
+              <td> 04:00</td>
+              <td>06:20</td>
+              <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td><img src="images/favicon.png" alt="logo" width="20px" height="20px">A3931 </td>
+              <td>Cairo (CAI) - Athens (ATH)</td>
+              <td>03:10</td>
+              <td>06:10</td>
+              <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td> <img src="images/favicon.png" alt="logo" width="20px" height="20px">A3947</td>
+              <td> Tbilisi (TBS) - Athens (ATH)</td>
+              <td>05:10</td>
+              <td>07:10</td>
+              <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td>  <img src="images/favicon.png" alt="logo" width="20px" height="20px">A3929</td>
+              <td>Beirut (BEY) - Athens (ATH)</td>
+              <td>04:30</td>
+              <td>06:30</td>  
+              <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td>  <img src="images/favicon.png" alt="logo" width="20px" height="20px">A3901</td>
+              <td>Tel Aviv (TLV) - Athens (ATH)</td>
+              <td>05:10</td>
+              <td>07:20</td>  
+              <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td>  <img src="images/favicon.png" alt="logo" width="20px" height="20px">A3495</td>
+              <td>Larnaka (LCA) - Athens (ATH)</td>
+              <td>05:15</td>
+              <td>07:00</td>  
+              <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td>  <img src="images/favicon.png" alt="logo" width="20px" height="20px">A3771</td>
+              <td>Athens (ATH) - Paros (PAS)</td>
+              <td>06:05</td>
+              <td>06:40</td>  
+              <td>Scheduled</td>
+          </tr>
+          <tr>
+              <td>  <img src="images/favicon.png" alt="logo" width="20px" height="20px">A3899</td>
+              <td>Thessaloniki (SKG) - Paros (PAS)</td>
+              <td>06:05</td>
+              <td>07:20</td>  
+              <td>Scheduled</td>
+          </tr>
+          </table>
+      <br>
+      <div class="button_destin">
+      <button_destin>LOAD MORE</button_destin>
+      </div>
+  </div>
+  </section>
+
+</div>
+
+<br><br>
+
+<div class="before_footer">
+  <div class="row1">
+      <div class="column1">
+          <h4> Discover Greece</h4>
+          <a href="https://www.visitgreece.gr/en"target="_blank"><img src="images/before_footer/visit_greece.png" alt="Visit Greece" width="40px" height="40px"> </a>
+          <a href="https://www.discovergreece.com/"target="_blank"><img src="images/before_footer/discover_greece_new.png" alt="Discover Greece" width="40px" height="40px"> </a>
+      </div>
+      <div class="column1">
+          <h4> Find your next stay</h4>
+          <a href="https://www.booking.com/"target="_blank"><img src="images/before_footer/booking.jpg" alt="Booking" width="40px" height="40px"> </a>
+          <a href="https://www.airbnb.gr/"target="_blank"><img src="images/before_footer/airbnb.jpg" alt="Airbnb" width="40px" height="40px"> </a>
+      </div>
+          
+      <div class="column1">
+          <h4> Follow us</h4>
+          <a href="https://www.facebook.com/"target="_blank"><img src="images/before_footer/facebook.png" alt="Facebook" width="40px" height="40px"> </a>
+          <a href="https://www.youtube.com/"target="_blank"><img src="images/before_footer/youtube_subscribe.png" alt="Twitter" width="40px" height="40px"> </a>
+          <a href="https://www.instagram.com/"target="_blank"><img src="images/before_footer/Instagram-Logo-JPG.jpg" alt="Twitter" width="40px" height="40px"> </a>
+          <a href="https://twitter.com/?lang=en/"target="_blank"><img src="images/before_footer/twitter.png" alt="Twitter" width="40px" height="40px"> </a>
+      </div>
+  </div>
+</div>
+<div class="footer">
+      <a href="mailto:webmaster@greek_airlines.com"> Contact us through email</a>
+      <h4>&#169; GREEK AIRLINES 2022 <br><a href="Home_page.html"><img src="images/logo.png" alt="Our logo" width="40px" height="40px"></a> </h4>
+</div>   
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+    </script>
+ 
+</body>
+</html>
